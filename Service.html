@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<meta name="x5-fullscreen" content="true">
+		<meta name="full-screen" content="yes">
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<title>狐獴网络</title>
+		<!-- link -->
+		<link rel="stylesheet" href="css/jquery.mmenu.all.css" />
+		<link rel="stylesheet" href="css/style.css" />
+	</head>
+
+	<body>
+		<div class="content">
+			<div class="page-header">
+				<span class="back-arrow" onClick="location.href='index.html'"></span>
+				<a href="#menu" class="nav-bar"></a>
+			</div>
+			<div class="section-box service-box">
+				<div class="hg">
+					<h1><span></span>服务体系<span></span></h1>
+					<p>提供互联网、移动互联网产品</p>
+					<p>专业设计、开发、运营及推广服务</p>
+				</div>
+				<ul class="clearfix">
+					<li>
+						<div>
+							<img src="images/ICON/icon-jiaohu.png" />
+							<dl>
+								<dt>交互原型设计</dt>
+								<dd>
+									<p>信息架构</p>
+									<p>低保真原型</p>
+									<p>界面布局</p>
+									<p>快速原型</p>
+									<p>产品原型</p>
+
+								</dd>
+							</dl>
+						</div>
+					</li>
+					<li>
+						<div>
+							<img src="images/ICON/icon-shijue.png" />
+							<dl>
+								<dt>产品视觉设计</dt>
+								<dd>视觉设计</dd>
+								<dd>设计规范与风格指南</dd>
+								<dd>品牌形象</dd>
+								<dd>图标设计</dd>
+								<dd>前端框架及开发</dd>
+							</dl>
+						</div>
+					</li>
+					<li>
+						<div>
+							<img src="images/ICON/icon-yidong.png" />
+							<dl>
+								<dt>移动产品设计</dt>
+								<dd>移动界面设计</dd>
+								<dd>ios/Android界面设计</dd>
+								<dd>微信公众平台</dd>
+								<dd>html5设计开发</dd>
+								<dd>移动网站设计开发</dd>
+							</dl>
+						</div>
+					</li>
+					<li>
+						<div>
+							<img src="images/ICON/icon-ruanjian.png" />
+							<dl>
+								<dt>软件界面设计</dt>
+								<dd>Windows软件界面设计</dd>
+								<dd>MacOS软件界面设计</dd>
+								<dd>车载软件界面</dd>
+								<dd>电视界面</dd>
+								<dd>其他终端软件界面</dd>
+							</dl>
+						</div>
+					</li>
+					<li>
+						<div>
+							<img src="images/ICON/icon-kaifa.png" />
+							<dl>
+								<dt>网站设计与开发</dt>
+								<dd>品牌网站设计开发</dd>
+								<dd>展示营销网站</dd>
+								<dd>电子商务网站</dd>
+								<dd>手机网站/响应式网站</dd>
+								<dd>前端开发与测试</dd>
+							</dl>
+						</div>
+					</li>
+					<div class="clear"></div>
+				</ul>
+			</div>
+		</div>
+		<div class="footer">
+			<a class="online" href="javascript:void(0)"></a>
+			<div class="copy">
+				<img src="images/BTN/copy.png" />
+			</div>
+		</div>
+		<nav id="menu">
+			<ul>
+				<li>
+					<a href="index.html" class="icon icon1">返回首页</a>
+				</li>
+				<li>
+					<a href="Service.html" class="icon icon2">服务体系</a>
+				</li>
+				<li>
+					<a href="service-product.html" class="icon icon3">服务产品</a>
+				</li>
+				<li>
+					<a href="case.html" class="icon icon4">往期案例</a>
+				</li>
+				<li>
+					<a href="news.html" class="icon icon5">看点资讯</a>
+				</li>
+				<li>
+					<a href="join-us.html" class="icon icon6">加入我们</a>
+				</li>
+				<li>
+					<a href="about.html" class="icon icon7">关于我们</a>
+				</li>
+				<li>
+					<a href="contact-us.html" class="icon icon8">联系我们</a>
+				</li>
+				<li>
+					<a href="http://m.zbj.com/shop/14526612" class="icon icon9">八戒服务</a>
+				</li>
+				<li class="table-box tel">
+					<span class="tel-icon"></span>
+					<span>
+						<i>15068741033</i>
+						<i>0571-87926873</i>
+					</span>
+				</li>
+				<li class="table-box qq">
+					<span class="qq-icon"></span>
+					<span>482643217&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+				</li>
+				<li class="table-box code">
+					<img src="images/ICON/img-code-sidemenu.png" />
+				</li>
+				<li class="table-box">
+					微信ID：MeerkatFamily
+				</li>
+			</ul>
+		</nav>
+
+		<script type="text/javascript" src="js/jquery-1.11.1.min.js"></script>
+		<script type="text/javascript" src="js/jquery.mmenu.min.all.js"></script>
+		<script>
+			jQuery(document).ready(function($) {
+				$("#menu").mmenu({
+					"slidingSubmenus": false,
+					"extensions": [
+						"pagedim-black",
+						"theme-dark"
+					],
+					"offCanvas": {
+						"position": "right"
+					}
+				});
+			});
+		</script>
+	</body>
+
+</html>

@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<meta name="x5-fullscreen" content="true">
+		<meta name="full-screen" content="yes">
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<title>狐獴网络</title>
+		<!-- link -->
+		<link rel="stylesheet" href="css/swiper.min.css" />
+		<link rel="stylesheet" href="css/jquery.mmenu.all.css" />
+		<link rel="stylesheet" href="css/style.css" />
+	</head>
+    <!-- web app适合在手机上看   可以谷歌模拟手机看，不过效果不太好 -->
+	<body>
+
+		<div class="swiper-container">
+			<a href="#menu" class="nav-bar"></a>
+			<div class="swiper-wrapper">
+				<div class="swiper-slide page1">
+					<div class="logo-box">
+						<img src="images/ICON/logo-img.png" />
+					</div>
+					<div class="btn-circle">
+						<div class="btn-arrow"></div>
+						<div class="btn-radius"></div>
+					</div>
+				</div>
+				<div class="swiper-slide page2" id="page2">
+					<div class="page-header"></div>
+					<ul class="page-menu clearfix">
+						<li class="first-clild">
+							<a href="Service.html">
+								<div><img src="images/ICON/btn-service-menu.png" /></div>
+								<p>服务体系</p>
+							</a>
+							<a href="case.html">
+								<div><img src="images/ICON/btn-case-menu.png" /></div>
+								<p>往期案例</p>
+							</a>
+							<a href="join-us.html">
+								<div><img src="images/ICON/btn-joinmenu.png" /></div>
+								<p>加入我们</p>
+							</a>
+							<a href="contact-us.html">
+								<div><img src="images/ICON/btn-contact-menu.png" /></div>
+								<p>联系我们</p>
+							</a>
+						</li>
+						<li>
+							<a href="service-product.html">
+								<div><img src="images/ICON/btn-product-menu.png" /></div>
+								<p>服务产品</p>
+							</a>
+							<a href="news.html">
+								<div><img src="images/ICON/btn-new-menu.png" /></div>
+								<p>看点资讯</p>
+							</a>
+							<a href="about.html">
+								<div><img src="images/ICON/btn-about-menu.png" /></div>
+								<p>关于我们</p>
+							</a>
+							<a href="http://m.zbj.com/shop/14526612">
+								<div><img src="images/ICON/btn-shop-menu.png" /></div>
+								<p>八戒服务</p>
+							</a>
+						</li>
+					</ul>
+					<div class="copy"><img src="images/BTN/copy.png" /></div>
+				</div>
+			</div>
+			<a class="online" href="javascript:void(0)"></a>
+		</div>
+		<nav id="menu">
+			<ul>
+				<li>
+					<a href="index.html" class="icon icon1">返回首页</a>
+				</li>
+				<li>
+					<a href="Service.html" class="icon icon2">服务体系</a>
+				</li>
+				<li>
+					<a href="service-product.html" class="icon icon3">服务产品</a>
+				</li>
+				<li>
+					<a href="case.html" class="icon icon4">往期案例</a>
+				</li>
+				<li>
+					<a href="news.html" class="icon icon5">看点资讯</a>
+				</li>
+				<li>
+					<a href="join-us.html" class="icon icon6">加入我们</a>
+				</li>
+				<li>
+					<a href="about.html" class="icon icon7">关于我们</a>
+				</li>
+				<li>
+					<a href="contact-us.html" class="icon icon8">联系我们</a>
+				</li>
+				<li>
+					<a href="http://m.zbj.com/shop/14526612" class="icon icon9">八戒服务</a>
+				</li>
+				<li class="table-box tel">
+					<span class="tel-icon"></span>
+					<span>
+						<i>15068741033</i>
+						<i>0571-87926873</i>
+					</span>
+				</li>
+				<li class="table-box qq">
+					<span class="qq-icon"></span>
+					<span>482643217&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+				</li>
+				<li class="table-box code">
+					<img src="images/ICON/img-code-sidemenu.png" />
+				</li>
+				<li class="table-box">
+					微信ID：MeerkatFamily
+				</li>
+			</ul>
+		</nav>
+		<!-- script -->
+		<script type="text/javascript" src="js/jquery-1.11.1.min.js"></script>
+		<script type="text/javascript" src="js/swiper.jquery.min.js"></script>
+		<script type="text/javascript" src="js/jquery.mmenu.min.all.js"></script>
+		<script>
+			window.onload = function() {
+				var myswiper = new Swiper('.swiper-container', {
+					direction: 'vertical',
+					resistanceRatio: 0
+				});
+
+				$('.btn-circle').click(function() {
+					myswiper.slideNext();
+				})
+			}
+			jQuery(document).ready(function($) {
+				$("#menu").mmenu({
+					"slidingSubmenus": false,
+					"extensions": [
+						"pagedim-black",
+						"theme-dark"
+					],
+					"offCanvas": {
+						"position": "right"
+					}
+				});
+			});
+
+			
+		</script>
+	</body>
+
+</html>

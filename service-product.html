@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<meta name="x5-fullscreen" content="true">
+		<meta name="full-screen" content="yes">
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<title>狐獴网络</title>
+		<!-- link -->
+		<link rel="stylesheet" href="css/jquery.mmenu.all.css" />
+		<link rel="stylesheet" href="css/style.css" />
+	</head>
+
+	<body>
+		<div class="content">
+			<div class="page-header">
+				<span class="back-arrow" onClick="location.href='index.html'"></span>
+				<a href="#menu" class="nav-bar"></a>
+			</div>
+			<div class="section-box service-product-box">
+				<div class="hg">
+					<h1><span></span>服务产品<span></span></h1>
+					<p>我们专注于UI设计、网站建设、</p>
+					<p>微信开发、前端制作，为您提供一站式服务</p>
+				</div>
+				<ul>
+					<li class="li1">
+						<a href="service-product-list.html">APP开发</a>
+					</li>
+					<li class="li2">
+						<a href="#">网站定制</a>
+					</li>
+					<li class="li3">
+						<a href="#">平台开发</a>
+					</li>
+					<li class="li4">
+						<a href="#">手机网站</a>
+					</li>
+					<li class="li5">
+						<a href="#">功能列表</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<div class="footer">
+			<a class="online" href="javascript:void(0)"></a>
+			<div class="copy">
+				<img src="images/BTN/copy.png" />
+			</div>
+		</div>
+		<nav id="menu">
+			<ul>
+				<li>
+					<a href="index.html" class="icon icon1">返回首页</a>
+				</li>
+				<li>
+					<a href="Service.html" class="icon icon2">服务体系</a>
+				</li>
+				<li>
+					<a href="service-product.html" class="icon icon3">服务产品</a>
+				</li>
+				<li>
+					<a href="case.html" class="icon icon4">往期案例</a>
+				</li>
+				<li>
+					<a href="news.html" class="icon icon5">看点资讯</a>
+				</li>
+				<li>
+					<a href="join-us.html" class="icon icon6">加入我们</a>
+				</li>
+				<li>
+					<a href="about.html" class="icon icon7">关于我们</a>
+				</li>
+				<li>
+					<a href="contact-us.html" class="icon icon8">联系我们</a>
+				</li>
+				<li>
+					<a href="http://m.zbj.com/shop/14526612" class="icon icon9">八戒服务</a>
+				</li>
+				<li class="table-box tel">
+					<span class="tel-icon"></span>
+					<span>
+						<i>15068741033</i>
+						<i>0571-87926873</i>
+					</span>
+				</li>
+				<li class="table-box qq">
+					<span class="qq-icon"></span>
+					<span>482643217&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+				</li>
+				<li class="table-box code">
+					<img src="images/ICON/img-code-sidemenu.png" />
+				</li>
+				<li class="table-box">
+					微信ID：MeerkatFamily
+				</li>
+			</ul>
+		</nav>
+
+		<script type="text/javascript" src="js/jquery-1.11.1.min.js"></script>
+		<script type="text/javascript" src="js/jquery.mmenu.min.all.js"></script>
+		<script>
+			jQuery(document).ready(function($) {
+				$("#menu").mmenu({
+					"slidingSubmenus": false,
+					"extensions": [
+						"pagedim-black",
+						"theme-dark"
+					],
+					"offCanvas": {
+						"position": "right"
+					}
+				});
+			});
+		</script>
+	</body>
+
+</html>
